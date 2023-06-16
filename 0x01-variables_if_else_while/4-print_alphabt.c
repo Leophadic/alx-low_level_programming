@@ -1,22 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - Entry point
  * Return: 0 (success)
  */
 int main(void)
 {
-	int n = 97;
+	char low, e, q;
 
-	while (n <= 122)
-{
-if (n == 101 || n == 133)
-{
-	n++;
-	continue;
-}
-putchar(n);
-n++;
-}
-putchar('\n');
-return (0);
-}
+	e = 'e';
+	q = 'q';
+
+	for (low = 'a'; low <= 'Z'; low++)
+	{
+	if (low != e && low != q)
+	putchar(low);
+	}
+	putchar('\n');
+	return (0);
+
